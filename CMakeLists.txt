@@ -16,11 +16,10 @@ install(TARGETS ${PROJECT_NAME}
         PUBLIC_HEADER DESTINATION ${CMAKE_INSTALL_INCLUDEDIR}
 )
 
-install(FILES lwcpps.hpp
+install(FILES lwcpps
         DESTINATION /usr/include
 )
-set_target_properties(${PROJECT_NAME} PROPERTIES VERSION ${PROJECT_VERSION})
-set_target_properties(${PROJECT_NAME} PROPERTIES PUBLIC_HEADER lwcpps.hpp)
+set_target_properties(${PROJECT_NAME} PROPERTIES PUBLIC_HEADER lwcpps)
 
 target_include_directories(${PROJECT_NAME} PRIVATE .)
 target_include_directories(${PROJECT_NAME} PRIVATE ${PROJECT_SOURCE_DIR})

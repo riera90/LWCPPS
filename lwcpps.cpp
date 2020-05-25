@@ -1,4 +1,4 @@
-#include <lwcpps.hpp>
+#include <lwcpps>
 
 void handleNextServerConnectionThreaded(handlerType handler, serverConnection client) {
     char buffer[LWCPPS_BUFF_SIZE];
